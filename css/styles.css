@@ -1,28 +1,31 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Title Section */
 #title{
   background-color: #ff4c68;
   position: relative;
   padding-bottom: 50px;
+  text-align: left;
 }
-#features{
-  background-color: white;
-  position: relative;
-  z-index: 1;
-  padding: 7% 15%;
-
+#title .container-fluid{
+  padding: 3% 15% 7%;
 }
-
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
 .heading-main{
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.5;
   color: white;
 }
-
 .imgCol{
   position:relative;
 }
@@ -30,10 +33,132 @@ body{
   transform: rotate(20deg);
   padding-top: 40px;
   position: absolute;
-  width: 60%;;
+  width: 60%;
   right:20%;
 }
 
+
+/* Navigation Bar */
+
+.navbar{
+  font-family: 'Ubuntu', sans-serif;
+}
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar-nav{
+  font-size: 20px;
+}
+.btn{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Features section */
+
+#features{
+  background-color: white;
+  position: relative;
+}
+.fa-5x{
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.fa-5x:hover{
+  color: #ff4c68;
+}
+.infoHeadings{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.infoParas{
+  color: #8f8f8f;
+}
+.infoCol{
+  padding: 0 0;
+}
+
+/* Testimonial Section */
+
+#testimonials{
+  background-color: #ef8172;
+  color: #FFF;
+  position: relative;
+}
+.testimonialText{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.testimonialImage{
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+
+
+/* Press Section */
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+.press-logo{
+  width:15%;
+  margin: 20px 20px 50px;
+}
+
+
+/* Pricing section */
+#pricing{
+  padding: 100px;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+.titleInCards{
+  font-size: 24px;
+  font-weight: bold;
+}
+.pricesInCards{
+  font-size: 38px;
+  font-weight: bold;
+}
+.pricingIntroHeader{
+  font-size: 38px;
+  font-weight: bold;
+}
+.card-body{
+   justify-content: space-between;
+}
+
+
+/* CTA Section */
+#cta{
+  background-color: #ff4c68;
+}
+.ctaHeading{
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+  color: white;
+  margin: 5% 10%;
+}
+
+
+/* Footer Section */
+#footer{
+  margin: 5%;
+}
+
+
+
+/* Buttons */
+.btn-dark{
+  margin-right: 15px;
+
+}
+
+/* Media Queries */
 @media screen and (max-width: 2560px) and (min-width: 2560px){
   .titleImage{
     width: 45%;
@@ -51,7 +176,7 @@ body{
   }
 }
 
-@media screen and  (max-width: 1028px) {
+@media screen and (max-width: 1028px) {
   .titleImage{
     position: static;
     transform: rotate(0);
@@ -59,145 +184,7 @@ body{
   #title{
     text-align: center;
   }
-}
-
-/* Navigation Bar */
-.navbar-brand{
-  font-size: 2.5rem;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
-
-}
-
-.navbar-nav{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
-}
-
-.container-fluid{
-  padding: 3% 15% 7%;
-}
-
-
-.btn{
-  font-family: 'Ubuntu', sans-serif;
-}
-
-/* Features section */
-
-.fa-5x{
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-.fa-5x:hover{
-  color: #ff4c68;
-}
-
-.infoHeadings{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-.infoParas{
-  color: #8f8f8f;
-
-
-}
-
-
-.infoCol{
-  padding: 0 0;
-
-}
-
-/* Testimonial Section */
-
-#testimonials{
-  text-align: center;
-  background-color: #ef8172;
-  color: #FFF;
-  position: relative;
-
-}
-
-.testimonialText{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.testimonialImage{
-  border-radius: 100%;
-  width: 10%;
-  margin: 20px;
-}
-
-#press{
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-}
-
-
-.press-logo{
-  width:15%;
-  margin: 20px 20px 50px;
-}
-
-.carousel-item{
-  padding: 7% 15%;
-}
-
-
-#pricing{
-  padding: 100px;
-
-}
-
-.pricing-column{
-  padding: 3% 2%;
-
-}
-.titleInCards{
-  font-size: 24px;
-  font-weight: bold;
-
-}
-.pricesInCards{
-  font-size: 38px;
-  font-weight: bold;
-
-}
-
-.pricingIntroHeader{
-  font-size: 38px;
-  font-weight: bold;
-
-}
-.card-body{
-   justify-content: space-between;
-
-}
-
-
-#cta{
-  text-align: center;
-  background-color: #ff4c68;
-  padding: 7% 15%;
-}
-
-.ctaHeading{
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.5;
-  color: white;
-  margin: 5% 10%;
-
-}
-
-.socialIcons{
-}
-#footer{
-  text-align: center;
-  margin: 5%;
-
+  .btn-dark{
+    margin-right: 2px;
+  }
 }
